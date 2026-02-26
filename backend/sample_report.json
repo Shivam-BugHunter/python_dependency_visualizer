@@ -1,0 +1,251 @@
+{
+  "graph": {
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/app.py": [
+      "config",
+      "core.logger",
+      "core.router",
+      "models.product",
+      "models.user",
+      "services.auth",
+      "services.database"
+    ],
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/config.py": [
+      "core.logger"
+    ],
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/core/__init__.py": [],
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/core/cache.py": [
+      "core.logger"
+    ],
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/core/logger.py": [],
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/core/router.py": [
+      "config",
+      "core.logger",
+      "services.auth",
+      "services.database",
+      "services.payments"
+    ],
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/dead_code/__init__.py": [],
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/dead_code/old_api.py": [],
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/dead_code/unused_math.py": [],
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/main.py": [],
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/models/__init__.py": [],
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/models/order.py": [
+      "core.logger",
+      "models.product",
+      "utils"
+    ],
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/models/product.py": [
+      "core.logger",
+      "utils"
+    ],
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/models/user.py": [
+      "core.logger"
+    ],
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/services/__init__.py": [],
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/services/auth.py": [
+      "core.logger",
+      "models.user",
+      "services.database",
+      "services.notifications",
+      "utils"
+    ],
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/services/database.py": [
+      "config",
+      "core.cache",
+      "core.logger"
+    ],
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/services/notifications.py": [
+      "core.logger",
+      "services.auth",
+      "utils"
+    ],
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/services/payments.py": [
+      "core.logger",
+      "models.order",
+      "services.database",
+      "utils"
+    ],
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/utils.py": [
+      "core.logger"
+    ],
+    "config": [],
+    "core.cache": [],
+    "core.logger": [],
+    "core.router": [],
+    "models.order": [],
+    "models.product": [],
+    "models.user": [],
+    "services.auth": [],
+    "services.database": [],
+    "services.notifications": [],
+    "services.payments": [],
+    "utils": []
+  },
+  "cycles": [],
+  "dead_modules": [
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/app.py",
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/config.py",
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/core/__init__.py",
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/core/cache.py",
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/core/logger.py",
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/core/router.py",
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/dead_code/__init__.py",
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/dead_code/old_api.py",
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/dead_code/unused_math.py",
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/main.py",
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/models/__init__.py",
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/models/order.py",
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/models/product.py",
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/models/user.py",
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/services/__init__.py",
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/services/auth.py",
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/services/database.py",
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/services/notifications.py",
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/services/payments.py",
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/utils.py"
+  ],
+  "metrics": {
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/app.py": {
+      "in_degree": 0,
+      "out_degree": 7
+    },
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/config.py": {
+      "in_degree": 0,
+      "out_degree": 1
+    },
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/core/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 0
+    },
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/core/cache.py": {
+      "in_degree": 0,
+      "out_degree": 1
+    },
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/core/logger.py": {
+      "in_degree": 0,
+      "out_degree": 0
+    },
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/core/router.py": {
+      "in_degree": 0,
+      "out_degree": 5
+    },
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/dead_code/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 0
+    },
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/dead_code/old_api.py": {
+      "in_degree": 0,
+      "out_degree": 0
+    },
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/dead_code/unused_math.py": {
+      "in_degree": 0,
+      "out_degree": 0
+    },
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/main.py": {
+      "in_degree": 0,
+      "out_degree": 0
+    },
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/models/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 0
+    },
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/models/order.py": {
+      "in_degree": 0,
+      "out_degree": 3
+    },
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/models/product.py": {
+      "in_degree": 0,
+      "out_degree": 2
+    },
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/models/user.py": {
+      "in_degree": 0,
+      "out_degree": 1
+    },
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/services/__init__.py": {
+      "in_degree": 0,
+      "out_degree": 0
+    },
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/services/auth.py": {
+      "in_degree": 0,
+      "out_degree": 5
+    },
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/services/database.py": {
+      "in_degree": 0,
+      "out_degree": 3
+    },
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/services/notifications.py": {
+      "in_degree": 0,
+      "out_degree": 3
+    },
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/services/payments.py": {
+      "in_degree": 0,
+      "out_degree": 4
+    },
+    "/Users/princekunal/Desktop/OJT-submission/backend/sample_project/utils.py": {
+      "in_degree": 0,
+      "out_degree": 1
+    },
+    "config": {
+      "in_degree": 3,
+      "out_degree": 0,
+      "lines": 31
+    },
+    "core.cache": {
+      "in_degree": 1,
+      "out_degree": 0,
+      "lines": 47
+    },
+    "core.logger": {
+      "in_degree": 12,
+      "out_degree": 0,
+      "lines": 38
+    },
+    "core.router": {
+      "in_degree": 1,
+      "out_degree": 0,
+      "lines": 43
+    },
+    "models.order": {
+      "in_degree": 1,
+      "out_degree": 0,
+      "lines": 47
+    },
+    "models.product": {
+      "in_degree": 2,
+      "out_degree": 0,
+      "lines": 43
+    },
+    "models.user": {
+      "in_degree": 2,
+      "out_degree": 0,
+      "lines": 35
+    },
+    "services.auth": {
+      "in_degree": 3,
+      "out_degree": 0,
+      "lines": 55
+    },
+    "services.database": {
+      "in_degree": 4,
+      "out_degree": 0,
+      "lines": 66
+    },
+    "services.notifications": {
+      "in_degree": 1,
+      "out_degree": 0,
+      "lines": 42
+    },
+    "services.payments": {
+      "in_degree": 1,
+      "out_degree": 0,
+      "lines": 49
+    },
+    "utils": {
+      "in_degree": 5,
+      "out_degree": 0,
+      "lines": 36
+    }
+  },
+  "files_scanned": 20,
+  "imports_found": 47
+}

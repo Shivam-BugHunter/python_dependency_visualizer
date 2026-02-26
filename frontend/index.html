@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DPV - Python Dependency Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="splash">
+        <div id="splashCard">
+            <h1>DPV</h1>
+            <p>Python Dependency Visualizer</p>
+            <div class="progress-container">
+                <div id="progressFill"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cards" class="hidden">
+        <div class="card">
+            <h2>Welcome</h2>
+            <p>Visualize your Python dependencies</p>
+        </div>
+        <div class="card">
+            <h2>Ready</h2>
+            <p>Upload a report to get started</p>
+        </div>
+    </div>
+
+    <div id="mainApp" class="hidden">
+        <aside id="sidebar">
+            <div class="sidebar-header">
+                <h2>DPV</h2>
+                <input type="file" id="fileInput" accept=".json" />
+            </div>
+
+            <div class="how-to-use">
+                <p><strong>How to use:</strong></p>
+                <p>1. Run the DPV scan on your backend:</p>
+                <p class="code-block">python -m dpv.cli scan . --json report.json</p>
+                <p>2. Upload the generated <strong>report.json</strong> here.</p>
+            </div>
+
+            <div id="summary">
+                <div class="stat-card">
+                    <div class="stat-label">Modules</div>
+                    <div class="stat-value" id="statModules">0</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Edges</div>
+                    <div class="stat-value" id="statEdges">0</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Cycles</div>
+                    <div class="stat-value" id="statCycles">0</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Dead</div>
+                    <div class="stat-value" id="statDead">0</div>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Cycles</h3>
+                <div id="cyclesList"></div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Dead Modules</h3>
+                <div id="deadList"></div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>Search</h3>
+                <input type="text" id="search" placeholder="Search modules..." />
+            </div>
+
+            <div class="sidebar-footer">
+                <p>Click a node to view module details.</p>
+            </div>
+        </aside>
+
+        <main id="content">
+            <div id="network"></div>
+            <div id="detailPanel" class="hidden">
+                <button id="closePanel" class="close-btn">&times;</button>
+                <h3 id="detailTitle"></h3>
+                <div class="detail-section">
+                    <h4>Imports</h4>
+                    <ul id="detailImports"></ul>
+                </div>
+                <div class="detail-section">
+                    <h4>Imported By</h4>
+                    <ul id="detailImportedBy"></ul>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+    <script src="script.js" defer></script>
+</body>
+</html>

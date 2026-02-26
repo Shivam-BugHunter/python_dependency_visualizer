@@ -1,0 +1,9 @@
+{
+  "graph": {
+    "a.py": ["b.py"],
+    "b.py": [],
+    "c.py": ["a.py"]
+  },
+  "cycles": [["a.py", "b.py", "a.py"]],
+  "dead_modules": ["c.py"]
+}
